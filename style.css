@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+}
+.calendar {
+  display: block;
+  padding: 10px;
+  margin:auto;
+  text-align: justify;
+  height: 600px;
+  width: 600px;
+  background-color: rgb(255, 254, 254);
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.4);
+}
+.month {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 2px;
+  height: 100px;
+  background-color: #2ecc71;
+  color: #fff;
+}
+.weekdays {
+  height: 50px;
+  background-color: #27ae60;
+  color: #fff;
+  display: flex;
+}
+.days ,.days2{
+  overflow: auto;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+}
+.weekdays div {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  padding: 20px;
+}
+.days2 div{
+  overflow-x: scroll;
+}
+.days div ,.days2 div{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+  padding: 20px;
+  border-style:solid;
+  border-color: rgb(137, 133, 133);
+  height: 60px;
+  transition: all 0.4s;
+}
+.days div:hover {
+  cursor: pointer;
+  background-color: #dfe6e9
+}
+.today {
+  background-color: #3e9cae;
+  color: #fff;
+}
+#month {
+  font-size: 30px;
+  font-weight: 500;
+}
+.selectDate{
+  border-style:solid;
+  border-color: rgb(137, 133, 133);
+  height: 50px;
+  width: 580px;
+  overflow:auto;
+  background-color: rgb(190, 255, 206);
+}
